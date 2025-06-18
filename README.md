@@ -10,4 +10,4 @@
 
 ![Light - Outline](./pic/Light-Outline.png)
 
-![Two tone](./pic/Two tone.png)
+![Two tone](./pic/Two-tone.png)
