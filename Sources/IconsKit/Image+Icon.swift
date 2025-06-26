@@ -29,7 +29,7 @@ public extension NSImage {
 
 #endif
 
-#if os(iOS)
+#if os(iOS) || os(visionOS) || os(tvOS)
 import UIKit
 
 private class FluentIconsBundleCheck {}
