@@ -7,12 +7,13 @@ import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)
 public extension Image {
-  
-  init(fluent: FluentIcon) {
-    #if os(macOS)
-    self.init(nsImage: NSImage.fluentIcon(fluent))
-    #else
-    self.init(uiImage: UIImage(fluent: fluent))
-    #endif
-  }
+    
+    init(fluent: FluentIcon) {
+        #if os(macOS)
+        self.init(nsImage: NSImage.fluentIcon(fluent))
+        #else
+        self.init(uiImage: UIImage(fluent: fluent))
+        #endif
+        self = self.renderingMode(.template)
+    }
 }
